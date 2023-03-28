@@ -1,0 +1,104 @@
+html{
+    margin: 0;
+    padding: 0;
+}
+.main_content_bg
+{
+    height: 100%;
+    padding: 30px !important;
+}
+.gyeongsang_body
+{
+    
+    min-height: 50vh;
+    padding: 30px 15% 20px;
+}
+.gyeong_main
+{
+    width: 100%;
+    min-height: calc(100vh - 150px);
+    margin-top: calc(150px);
+}
+.main_content_container
+{
+    background-color: white;
+    padding: 20px;   
+}
+.product-container
+{
+    grid-template-columns: 100%;
+    gap: 20px;
+    display: grid;
+    grid-template-columns: 50% 1fr
+}
+.product
+{
+    border: 2px solid rgb(198, 199, 229);
+    padding: 10px;
+    border-radius: 3px;
+}
+.product-title
+{
+    font-weight: bold;
+    font-size: 1.4em;
+    padding-bottom: 10px;
+}
+.product-content-title
+{
+    font: inherit;
+    color: rgb(59, 117, 184);
+    font-weight: bold;
+    font-size: 1.2em;
+    padding-bottom: 20px;
+}
+.product-content-main
+{
+    font: inherit;
+    color: rgb(102, 102, 102);
+    padding-bottom: 20px;
+    font-size: 1em;
+
+}
+.product-infomation-text
+{
+    display: flex;
+    -webkit-box-align: end;
+    align-items: end;
+    color: green;
+    font-weight: bold;
+    font-size: 0.9em;
+    word-break: keep-all;
+}
+.product-infomation-container
+{
+    margin-top: 10%;
+    display: grid;
+    grid-template-columns: 70% 1fr;
+}
+.product-infomation-text
+{
+    display: flex;
+    -webkit-box-align: end;
+    align-items: end;
+    color: green;
+    font-weight: bold;
+    font-size: 0.9em;
+    word-break: keep-all;
+}
+.product-infomation-button-container
+{
+    display: flex;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+}
+.product-button
+{
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0px;
+    background-color: rgb(59, 117, 184);
+    border: 0;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+}
