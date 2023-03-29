@@ -2,6 +2,10 @@ html{
     margin: 0;
     padding: 0;
 }
+.product-button
+{
+    cursor: pointer;
+}
 .main_content_bg
 {
     height: 100%;
@@ -43,8 +47,13 @@ html{
     font-size: 1.4em;
     padding-bottom: 10px;
 }
+.product-content-container
+{
+    
+}
 .product-content-title
 {
+    
     font: inherit;
     color: rgb(59, 117, 184);
     font-weight: bold;
@@ -53,10 +62,10 @@ html{
 }
 .product-content-main
 {
-    font: inherit;
     color: rgb(102, 102, 102);
     padding-bottom: 20px;
     font-size: 1em;
+    min-height: 100px;
 
 }
 .product-infomation-text
@@ -71,7 +80,6 @@ html{
 }
 .product-infomation-container
 {
-    margin-top: 10%;
     display: grid;
     grid-template-columns: 70% 1fr;
 }
