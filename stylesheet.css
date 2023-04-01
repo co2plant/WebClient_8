@@ -2,7 +2,11 @@ html{
     margin: 0;
     padding: 0;
 }
-.product-button
+.full-image
+{
+    padding-bottom: 10px;
+}
+.product-button,.banner-content
 {
     cursor: pointer;
 }
@@ -21,8 +25,8 @@ html{
 {
     width: 100%;
     min-height: calc(100vh - 150px);
-    margin-top: calc(150px);
 }
+
 .main_content_container
 {
     background-color: white;
@@ -33,10 +37,28 @@ html{
     grid-template-columns: 100%;
     gap: 20px;
     display: grid;
-    grid-template-columns: 50% 1fr
+
 }
+.product-image
+{
+    width: 400px;
+    height: 300px;
+}
+.product-image-div
+{
+    padding-right: 10px;
+    display: block;
+    margin: auto;
+}
+.product-text
+{
+    margin: auto;
+}
+
 .product
 {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
     border: 2px solid rgb(198, 199, 229);
     padding: 10px;
     border-radius: 3px;
@@ -46,10 +68,6 @@ html{
     font-weight: bold;
     font-size: 1.4em;
     padding-bottom: 10px;
-}
-.product-content-container
-{
-    
 }
 .product-content-title
 {
@@ -110,3 +128,21 @@ html{
     color: rgb(255, 255, 255);
     padding: 10px 20px;
 }
+.floBanPc1 {
+    display: grid;
+    position: fixed;
+    top: 15%; /* 윗쪽 끝에서부터의 거리 */
+    right: 5%;
+    z-index: 0;
+  }
+  .banner
+  {
+    text-align: center;
+    border: 2px solid #0F172B;
+    border-radius: 10px;
+  }
+  .banner-content
+  {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
