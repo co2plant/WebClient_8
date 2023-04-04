@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 
-<link href="./stylesheet.css" rel="stylesheet">
-
+<link href="css/stylesheet.css" rel="stylesheet">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link href="lib/animate/animate.min.css" rel="stylesheet">
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -139,10 +141,10 @@
         <div class = "full-image">
             <img class="gyeong" src="/img/kyongsang_top.png" alt="Image" style="width: 100%;">
         </div>
-        <div class = "main_content_bg" style="background-image: url(/img/kyongsang_bg.jpg);">
+        <div class = "main_content_bg">
             <div class = "main_content_container">
                 <div class="product-container">
-                    <div class="product"> <!--첫번 째 텍스트 컨테이너-->
+                    <div class="product fade-in wow fadeInLeft"> <!--첫번 째 텍스트 컨테이너-->
                         <div class = "product-image-div"><img class="product-image" src="./img/product-lodment-1.jpg" alt="Image"></div>
                         <div class="product-text">
                             <div class = "product-title">전주</div>
@@ -157,7 +159,7 @@
                             </div>
                         </div><!--텍스트 컨테이너 종료-->
 
-                    <div class="product" style="background-color: rgba(102, 185, 189, 0.1);"> <!--두번 째 텍스트 컨테이너-->
+                    <div class="product fade-in wow fadeInLeft" style="background-color: rgba(102, 185, 189, 0.1);"> <!--두번 째 텍스트 컨테이너-->
                         <div class = "product-image-div"><img class="product-image" src="./img/product-lodment-2.jpg" alt="Image"></div>
                         <div class="product-text">
                             <div class = "product-title">군산</div>
@@ -172,7 +174,7 @@
                             </div>
                         </div><!--텍스트 컨테이너 종료-->
 
-                    <div class="product"> <!--세번 째 텍스트 컨테이너-->
+                    <div class="product fade-in wow fadeInLeft"> <!--세번 째 텍스트 컨테이너-->
                         <div class = "product-image-div"><img class="product-image" src="./img/product-3.jpg" alt="Image"></div>
                         <div class="product-text">
                             <div class = "product-title">무주 / 진안</div>
@@ -187,7 +189,7 @@
                             </div>
                         </div><!--텍스트 컨테이너 종료-->
 
-                    <div class="product" style="background-color: rgba(102, 185, 189, 0.1);"> <!--네번 째 텍스트 컨테이너-->
+                    <div class="product fade-in wow fadeInLeft" style="background-color: rgba(102, 185, 189, 0.1);"> <!--네번 째 텍스트 컨테이너-->
                         <div class = "product-image-div"><img class="product-image" src="./img/product-2.jpg" alt="Image"></div>
                         <div class="product-text">
                             <div class = "product-title">남원 / 장수</div>
@@ -202,7 +204,7 @@
                             </div>
                         </div><!--텍스트 컨테이너 종료-->
 
-                    <div class="product"> <!--다섯번 째 텍스트 컨테이너-->
+                    <div class="product fade-in wow fadeInLeft"> <!--다섯번 째 텍스트 컨테이너-->
                         <div class = "product-image-div"><img class="product-image" src="./img/product-lodment-3.jpg" alt="Image"></div>
                         <div class="product-text">
                             <div class = "product-title">순창 / 임실</div>
@@ -217,7 +219,7 @@
                             </div>
                         </div><!--텍스트 컨테이너 종료-->
 
-                    <div class="product" style="background-color: rgba(102, 185, 189, 0.1);"> <!--여섯번 째 텍스트 컨테이너-->
+                    <div class="product fade-in wow fadeInLeft" style="background-color: rgba(102, 185, 189, 0.1);"> <!--여섯번 째 텍스트 컨테이너-->
                         <div class = "product-image-div"><img class="product-image" src="./img/product-lodment-4.jpg" alt="Image"></div>
                         <div class="product-text">
                             <div class = "product-title">완주 / 익산</div>
@@ -232,7 +234,7 @@
                             </div>
                         </div><!--텍스트 컨테이너 종료-->
 
-                    <div class="product"> <!--일곱번 째 텍스트 컨테이너-->
+                    <div class="product fade-in wow fadeInLeft"> <!--일곱번 째 텍스트 컨테이너-->
                         <div class = "product-image-div"><img class="product-image" src="./img/product-lodment-5.jpg" alt="Image"></div>
                         <div class="product-text">
                             <div class = "product-title">김제 / 부안</div>
@@ -247,7 +249,7 @@
                             </div>
                         </div><!--텍스트 컨테이너 종료-->
 
-                    <div class="product" style="background-color: rgba(102, 185, 189, 0.1);"> <!--여덞번 째 텍스트 컨테이너-->
+                    <div class="product fade-in wow fadeInLeft" style="background-color: rgba(102, 185, 189, 0.1);"> <!--여덞번 째 텍스트 컨테이너-->
                         <div class = "product-image-div"><img class="product-image" src="./img/product-lodment-6.jpg" alt="Image"></div>
                         <div class="product-text">
                             <div class = "product-title">정읍 / 고창</div>
@@ -268,23 +270,65 @@
         </div>
     </div>
     </div>
-    <div class="floBanPc1 hidden-md hidden-sm hidden-xs">
-        <div class="banner">
-            <div class="banner-content" onclick="window.open ('https://www.jbtour.or.kr/faq')">
-                <img src="./img/conversation.png" width="100px height=100px" style="position: static;">
-                <p>자주 묻는 질문</p>
+</main>
+<div class="container-fluid bg-dark my-5 py-5 text-light footer wow fadeIn" data-wow-delay="0.1s">
+    <div class="container pb-5">
+        <div class="row g-5">
+            <div class="col-md-6 col-lg-4">
+                <div class="bg-primary rounded p-4">
+                    <a href="index.html"><h1 class="text-white text-uppercase mb-3">전라북도 순환관광</h1></a>
+                    <p class="text-white mb-0">
+                        <a class="text-dark fw-medium" href="http://www.wku.ac.kr/">자바 풀스텍 아카데미</a> 과제로 제작된 홈페이지 입니다. 
+                    </p>
+                </div>
             </div>
-            <div class="banner-content" onclick="window.open ('https://www.jbtour.or.kr/review')">
-                <img src="./img/review.png" width="100px height=100px" style="position: static;">
-                <p>여행후기</p>
+            <div class="col-md-6 col-lg-3">
+                <h6 class="section-title text-start text-primary text-uppercase mb-4">Contact</h6>
+                <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>전라북도 전주시 덕진구 정언신로 95 경희프라자건물 7층  </p>
+                <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>063-287-6292</p>
+                <p class="mb-2"><i class="fa fa-envelope me-3"></i> 063-288-6294</p>
+                <div class="d-flex pt-2">
+                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                </div>
             </div>
-            <div class="banner-content" onclick="window.open ('https://www.jbtour.or.kr/video')">
-                <img src="./img/video.png" width="100px height=100px" style="position: static;">
-                <p>홍보영상</p>
+            <div class="col-lg-5 col-md-12">
+                <div class="row gy-5 g-4">
+                    <div class="col-md-6">
+                        <h6 class="section-title text-start text-primary text-uppercase mb-4">전화 문의</h6>
+                        <a class="btn btn-link" href="">063-252-2988</a>
+                        <a class="btn btn-link" href="">평일 09:00 - 18:00 (토/일/공휴일 휴무)</a>
+                    </div>
+                   
+                </div>
             </div>
         </div>
-      </div>
-</main>
+    </div>
+    <div class="container">
+        <div class="copyright">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    &copy; <a class="border-bottom" href="#">웹프로젝트 8조 제작물 </a>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <div class="footer-menu">
+                        <a href="">Home</a>
+                        <a href="">Cookies</a>
+                        <a href="">Help</a>
+                        <a href="">FQAs</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="lib/animate/product_ani.js"></script>
+ <script src="lib/wow/wow.min.js"></script>
+ <script>
+    new WOW().init();
+</script>
 </body>
 <script type="text/javascript" / ></script>
 </html>

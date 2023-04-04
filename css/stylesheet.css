@@ -17,7 +17,6 @@ html{
 }
 .gyeongsang_body
 {
-    
     min-height: 50vh;
     padding: 30px 15% 20px;
 }
@@ -54,20 +53,35 @@ html{
 {
     margin: auto;
 }
-
+.gyeongsang_body
+{
+    background-image: url("/img/bg.png");
+}
+.main_content_bg
+{
+    background-image: url("/img/kyongsang_bg.jpg");
+}
 .product
 {
+    background-blend-mode: multiply;
     display: grid;
     grid-template-columns: 1fr 2fr;
     border: 2px solid rgb(198, 199, 229);
+    transition-property: border-color; /* 어떤 css 프로퍼티를 transition할지 지정 */
+    transition-duration: 0.5s;
     padding: 10px;
     border-radius: 3px;
+}
+.product:hover   
+{
+    border-color: #fea116;
 }
 .product-title
 {
     font-weight: bold;
     font-size: 1.4em;
     padding-bottom: 10px;
+    color: #0F172B;
 }
 .product-content-title
 {
@@ -122,7 +136,7 @@ html{
     font-size: 100%;
     line-height: 1.15;
     margin: 0px;
-    background-color: rgb(59, 117, 184);
+    background-color: #0F172B;
     border: 0;
     border-radius: 5px;
     color: rgb(255, 255, 255);
