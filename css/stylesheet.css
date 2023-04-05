@@ -186,7 +186,8 @@ html{
     text-align: center;
     margin: auto;
 }
-.tboder
+.margin_center
 {
-    border: 1px solid white;
+    margin-left: auto;
+    margin-right: auto;
 }
