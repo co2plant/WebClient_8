@@ -1,16 +1,41 @@
 <!DOCTYPE html>
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
-<link href="css/stylesheet.css" rel="stylesheet">
-<link href="css/bootstrap.min.css" rel="stylesheet">
-<link href="css/style.css" rel="stylesheet">
-<link href="lib/animate/animate.min.css" rel="stylesheet">
-<html lang="kr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>로그인 페이지</title>
+
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+    <link rel="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">  
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+
+    
+
 </head>
 <body>
     <div class="container-fluid bg-dark px-0">
@@ -133,56 +158,50 @@
             </div>
         </div>
     <main class="container-fluid my-5 py-5 text-light">
-        <div class="container d-flex justify-content-center align-items-center">
-            <div class="row d-inline-flex justify-content-center">
-                <form class="mb-3 mt-md-4">
-                    <div class="form-group mb-4">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-6">
+                    <form class="mb-3 mt-md-4">
                         <div class="form-group">
                             <h4>로그인</h4>
                         </div>
-                        <div class="form-group">
-                            <label for="exampleInputEmail1">Email address</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                        <div class="form-group my-1">
+                            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="이메일 주소">
                         </div>
-                        <div class="form-group">
-                            <label for="exampleInputPassword1">Password</label>
-                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                            <i class="bi bi-eye-slash" id="togglePassword"></i>
+                        <div class="form-group my-1">
+                            <div class="input-group" id="show_hide_password">
+                                <input type="password" class="form-control" id="password" placeholder="비밀번호">
+                                <span class="input-group-text">
+                                    <i class="fa fa-eye" id="togglePassword" style="cursor: pointer;"></i>
+                                </span>
+                            </div>
                         </div>
-                        <div class="form-group">
+                        <div class="form-group my-3">
                             <div class="d-grid"><button class="btn btn-primary" type="submit">Login</button></div>
                         </div>
-                        <div class="form-group">
-                            <div class="login-form-identification-find">
-                                <em><a href="src">아이디/비밀번호 찾기</a></em>
-                                <em> | </em>
-                                <em><a href="src">비회원 예약 조회</a></em>
+                        <div class="form-group my-3">
+                            <div class="text-md-end">
+                                <a href="src">아이디/비밀번호 찾기</a><em> | </em><a href="src">비회원 예약 조회</a>
                             </div>
                         </div>
-                    </div>
-                    <div class="form-group mb-4">
-                        <div class="form-group d-grid justify-content-center"">
+                        <div class="form-group d-grid justify-content-center">
                             <h4>간편 로그인</h4>
                         </div>
-                        <div class="d-flex justify-content-center text-center mt-4 pt-1">
-                            <div class="mb-4 d-flex align-items-center justify-content-center p-3 py-6 btn btn-success btn-circle btn-xl bg-dark">
-                                <a href="#!" class="text-primary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-apple" viewBox="0 0 16 16">
-                                    <path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43Zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282Z"/>
-                                    <path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43Zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282Z"/>
-                                </svg></a>
+                        <div class="container px-4 d-flex justify-content-center text-center mt-4 pt-1 my-4">
+                            <div class="d-flex pt-2 px-3">
+                                <a class="btn btn-outline-light btn-dark btn-social" href="" style="width:80px; height:80px; border-radius: 80px; font-size: 30px; line-height: 70px;">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
                             </div>
-                            <div class="mb-4 d-flex align-items-center justify-content-center p-3 py-6 btn btn-success btn-circle btn-xl bg-dark">
-                                <a href="#!" class="text-primary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-apple" viewBox="0 0 16 16">
-                                    <path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43Zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282Z"/>
-                                    <path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43Zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282Z"/>
-                                </svg></a>
+                            <div class="d-flex pt-2 px-3">
+                            <a class="btn btn-outline-light btn-dark btn-social" href="" style="width:80px; height:80px; border-radius: 80px; font-size: 30px; line-height: 70px;"><i class="fab fa-facebook-f"></i></a>
                             </div>
-                          </div>
-                    </div>
-                    <div class="d-grid">
-                        <button class="btn btn-primary btn-block mb-4">Sign in</button>
-                    </div> 
-                </form>      
+                        </div>
+                        <div class="d-grid">
+                            <button class="btn btn-primary btn-block mb-4">회원가입</button>
+                        </div> 
+                    </form>
+                </div>      
             </div>
         </div>
     </main>
@@ -240,27 +259,34 @@
         </div>
     </div>
     <script>
-        const togglePassword = document
-            .querySelector('#togglePassword');
-  
-        const password = document.querySelector('#password');
-  
-        togglePassword.addEventListener('click', () => {
-  
-            // Toggle the type attribute using
-            // getAttribure() method
-            const type = password
-                .getAttribute('type') === 'password' ?
-                'text' : 'password';
-                  
-            password.setAttribute('type', type);
-  
-            // Toggle the eye and bi-eye icon
-            this.classList.toggle('bi-eye');
+        const togglePassword = document.querySelector("#togglePassword");
+        const password = document.querySelector("#password");
+
+        togglePassword.addEventListener("click", function () {
+            // toggle the type attribute
+            const type = password.getAttribute("type") === "password" ? "text" : "password";
+            password.setAttribute("type", type);
+            // toggle the eye icon
+            this.classList.toggle('fa-eye');
+            this.classList.toggle('fa-eye-slash');
         });
     </script>
     <script src="lib/animate/product_ani.js"></script>
      <script src="lib/wow/wow.min.js"></script>
+     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+     <script src="lib/wow/wow.min.js"></script>
+     <script src="lib/easing/easing.min.js"></script>
+     <script src="lib/waypoints/waypoints.min.js"></script>
+     <script src="lib/counterup/counterup.min.js"></script>
+     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+     <script src="lib/tempusdominus/js/moment.min.js"></script>
+     <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+     <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+    
+     <!-- Template Javascript -->
+     <script src="js/main.js"></script>
+    
      <script>
         new WOW().init();
     </script>
