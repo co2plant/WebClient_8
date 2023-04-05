@@ -1,16 +1,41 @@
 <!DOCTYPE html>
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
-<link href="css/stylesheet.css" rel="stylesheet">
-<link href="css/bootstrap.min.css" rel="stylesheet">
-<link href="css/style.css" rel="stylesheet">
-<link href="lib/animate/animate.min.css" rel="stylesheet">
-<html lang="kr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>아이디/비밀번호 찾기 페이지</title>
+    <title>전라북도 순환 관광 - 아이디/비밀번호 찾기</title>
+
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+    <link rel="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">  
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+
+    
+
 </head>
 <body>
     <div class="container-fluid bg-dark px-0">
@@ -121,7 +146,10 @@
                                                 <a href="https://www.jbtour.or.kr/review" class="dropdown-item">여행후기</a>
                                             </div>
                                 </div>
-                                    <a href="https://www.jbtour.or.kr/video" class="nav-item nav-link">홍보영상</a>             
+
+                                <a href="https://www.jbtour.or.kr/video" class="nav-item nav-link">홍보영상</a>
+                                   
+                                                      
                                 </div>
                             </div>
                         </div>
@@ -129,34 +157,37 @@
                 </div>
             </div>
         </div>
-    <main class="container my-5 py-5 text-light">
-        <div class="container d-flex justify-content-center align-items-center">
-            <div class="row d-flex justify-content-center">
-                <form class="mb-3 mt-md-4">
-                    <div class="form-group mb-4"> 
+    <main class="container-fluid my-5 py-5 text-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-6">
+                    <form class="mb-3 mt-md-4">
                         <div class="form-group">
                             <h4>아이디/비밀번호 찾기</h4>
                         </div>
-                        <div class="form-group d-flex justify-content-center align-items-center">
-                            <div class="row d-inline-flex justify-content-center align-items-center">
-                                <button class="btn btn-primary d-inline-flex">아이디 찾기</button>
-                                <button class="btn btn-dark d-inline-flex">비밀번호 찾기</button>
+                        <div class="form-group my-3">
+                            <div class="d-flex">
+                                <button class="btn btn-primary col-6" type="submit" style="border-radius:0px">아이디 찾기</button>
+                                <button class="btn btn-dark col-6 bg-white text-dark" type="submit" style="border-radius:0px; border:1px gray solid;">비밀번호 찾기</button>
                             </div>
                         </div>
-                        <div class="form-group">
-                            <label for="exampleInputEmail1">회원가입 시 등록한 휴대폰 번호를 입력해 주세요.</label>
-                            <input type="text" class="form-control" id="exampleInputName" aria-describedby="nameHelp" placeholder="이름(실명)">
+                        <div class="form-group my-3">
+                            <span class="text-dark">회원가입 시 등록한 휴대폰 번호를 입력해 주세요.</span>
                         </div>
-                        <div class="form-group">
-                            <label for="empty"></label>
-                            <input type="tel" class="form-control" id="exampleInputPhoneNumber" placeholder="휴대폰 번호 (숫자만 입력)">
+                        <div class="form-group my-1">
+                            <input type="text" class="form-control" id="userName" aria-describedby="userName" placeholder="이름(실명)">
                         </div>
-                        <div class="form-group">
-                            <label for="empty"></label>
+                        <div class="form-group my-1">
+                            <div class="input-group">
+                                <input type="tel" class="form-control" id="phone" placeholder="휴대폰 번호(숫자만 입력)" pattern="[0-9]{10,11}"
+                                required>
+                            </div>
+                        </div>
+                        <div class="form-group my-3">
                             <div class="d-grid"><button class="btn btn-primary" type="submit">확인</button></div>
                         </div>
-
-                </form>      
+                    </form>
+                </div>      
             </div>
         </div>
     </main>
@@ -214,27 +245,34 @@
         </div>
     </div>
     <script>
-        const togglePassword = document
-            .querySelector('#togglePassword');
-  
-        const password = document.querySelector('#password');
-  
-        togglePassword.addEventListener('click', () => {
-  
-            // Toggle the type attribute using
-            // getAttribure() method
-            const type = password
-                .getAttribute('type') === 'password' ?
-                'text' : 'password';
-                  
-            password.setAttribute('type', type);
-  
-            // Toggle the eye and bi-eye icon
-            this.classList.toggle('bi-eye');
+        const togglePassword = document.querySelector("#togglePassword");
+        const password = document.querySelector("#password");
+
+        togglePassword.addEventListener("click", function () {
+            // toggle the type attribute
+            const type = password.getAttribute("type") === "password" ? "text" : "password";
+            password.setAttribute("type", type);
+            // toggle the eye icon
+            this.classList.toggle('fa-eye');
+            this.classList.toggle('fa-eye-slash');
         });
     </script>
     <script src="lib/animate/product_ani.js"></script>
      <script src="lib/wow/wow.min.js"></script>
+     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+     <script src="lib/wow/wow.min.js"></script>
+     <script src="lib/easing/easing.min.js"></script>
+     <script src="lib/waypoints/waypoints.min.js"></script>
+     <script src="lib/counterup/counterup.min.js"></script>
+     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+     <script src="lib/tempusdominus/js/moment.min.js"></script>
+     <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+     <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+    
+     <!-- Template Javascript -->
+     <script src="js/main.js"></script>
+    
      <script>
         new WOW().init();
     </script>
