@@ -181,3 +181,12 @@ html{
     font-size: 12px;
     line-height: 1.42857;
 }
+.text_center
+{
+    text-align: center;
+    margin: auto;
+}
+.tboder
+{
+    border: 1px solid white;
+}
