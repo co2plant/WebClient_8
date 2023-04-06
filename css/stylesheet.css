@@ -67,7 +67,7 @@ html{
     display: grid;
     grid-template-columns: 1fr 2fr;
     border: 2px solid rgb(198, 199, 229);
-    transition-property: border-color; /* 어떤 css 프로퍼티를 transition할지 지정 */
+    transition-property: border-color;
     transition-duration: 0.5s;
     padding: 10px;
     border-radius: 3px;
@@ -75,6 +75,12 @@ html{
 .product:hover   
 {
     border-color: #fea116;
+}
+.banner:hover   
+{
+    background-color: #ff9900;
+    color: white;
+    border-color: black;
 }
 .product-title
 {
@@ -144,23 +150,19 @@ html{
     color: rgb(255, 255, 255);
     padding: 10px 20px;
 }
-.floBanPc1 {
-    display: grid;
-    position: fixed;
-    top: 15%; /* 윗쪽 끝에서부터의 거리 */
-    right: 5%;
-    z-index: 0;
-  }
   .banner
   {
+
+    cursor: pointer;
     text-align: center;
-    border: 2px solid #0F172B;
-    border-radius: 10px;
-  }
-  .banner-content
-  {
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding: 4%;
+    border: 1px solid rgb(224, 224, 224);
+    width: 100%; 
+    height: 5%;
+    background-color: white;
+    color: black;
+    transition-property: background-color,color,border-color;
+    transition-duration: 0.5s;
   }
 
   .btn-circle.btn-xl {
@@ -306,4 +308,98 @@ li:nth-child(2) {
         line-height: 1.5;
         margin-bottom: 15px;
       }
+}
+.tbold
+{
+    font-weight: bold;
+}
+.course-container
+{
+    margin-bottom: 2.5%;
+    border: 1px solid black;
+    width: 100%;
+
+    box-shadow: none;
+    display: flex; max-height: 25%;
+    overflow: hidden;
+    border-radius: 5px;
+    transition-property: border-color box-shadow;
+    transition-duration: 0.3s;
+}
+.course-container:hover
+{
+    border-color: #fea116;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.19), 6px 6px 6px rgba(0,0,0,0.23);
+}
+.course-img-container
+{
+    width: 30%;
+    margin-left: 1%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    overflow: hidden;
+}
+.course-img
+{
+    cursor: pointer;
+    scale: 1;
+    top:0px;
+    left: 0px;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    transition-property: scale;
+    transition-duration: 0.5s;
+}
+.course-img:hover
+{
+    scale: 1.1;
+}
+.course-text-container
+{
+    width: 70%;
+    margin-right: 1%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: 3%;
+    display: flex;
+    flex-direction: column;
+}
+.course-text-calendar
+{
+    border-radius:4px;
+    text-align:center;
+    width: 15%;
+    margin-left: auto;
+    margin-right: 1%;
+}
+.course-text-content-div
+{
+    width: 100%;
+    height: 50%; 
+    margin-top: 1%;
+    display: flex;
+}
+.course-text-content-box
+{
+    background-color: rgb(242, 242, 242);
+    border-radius: 4px;
+    width: 12%;
+    text-align: center;
+}
+.course-text-price-container
+{
+    width: 100%;
+    height: 100%; 
+    margin-top: 2%;
+    display: flex;
+    border-top: 1px solid rgb(224, 224, 224);
+    margin-right: 10%;
+}
+.course-text-price
+{
+    margin-left: auto;
+    margin-top:1%;
+    font-size:1.2em;
 }
