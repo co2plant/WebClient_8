@@ -328,7 +328,7 @@ li:nth-child(2) {
 }
 .course-container:hover
 {
-    border-color: #fea116;
+    border-color: white;
     box-shadow: 5px 5px 10px rgba(0,0,0,0.19), 6px 6px 6px rgba(0,0,0,0.23);
 }
 .course-img-container
@@ -368,11 +368,20 @@ li:nth-child(2) {
 }
 .course-text-calendar
 {
+    cursor: pointer;
     border-radius:4px;
     text-align:center;
     width: 15%;
     margin-left: auto;
     margin-right: 1%;
+    line-height: 1.5;
+    transition-property: background-color;
+    background-color: black;
+    transition-duration: 0.5s;
+}
+.course-text-calendar:hover
+{
+    background-color: #fea116;
 }
 .course-text-content-div
 {
