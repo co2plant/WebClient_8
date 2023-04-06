@@ -139,41 +139,36 @@
 <main>
     <div style="height: 800px;">
     <div class="text_center bg-dark"style="width: 10%;margin-top:5%;">
-        <a style="color: #FFFFFF;font-size: 2em;">공지사항</a>
+        <a style="color: #FFFFFF;font-size: 2em;">FAQ</a>
     </div>
-    <div style="padding-top: 2%;text-align: center;width: 100%;">
-        <ul class="notice-ul margin_center">
-            <li class="bg-primary border-black">번호</li>
-            <li class="bg-primary border-black">제목</li>
-            <li class="bg-primary border-black">작성일</li>
-            <li class="bg-primary border-black">작성자</li>
-        </ul>
-</div>
-<div class="notice-content" onclick="location.href='community-notice-inside.html'">
-    <ul class="bg-while notice-ul margin_center text-dark">
-        <li class="border-black bg-white">001</li>
-        <li class="border-black bg-white">TEST</li>
-        <li class="border-black bg-white">23-04-05</li>
-        <li class="border-black bg-white">[관리자]</li>
-    </ul>
-</div>
-<div class="notice-content" onclick="location.href='community-notice-inside.html'">
-    <ul class="bg-while notice-ul margin_center text-dark">
-        <li class="border-black bg-white">002</li>
-        <li class="border-black bg-white">TEST</li>
-        <li class="border-black bg-white">23-04-05</li>
-        <li class="border-black bg-white">[관리자]</li>
-    </ul>
-</div>
-<div class="notice-content"onclick="location.href='community-notice-inside.html'">
-    <ul class="bg-while notice-ul margin_center text-dark">
-        <li class="border-black bg-white">003</li>
-        <li class="border-black bg-white">TEST</li>
-        <li class="border-black bg-white">23-04-05</li>
-        <li class="border-black bg-white">[관리자]</li>
-    </ul>
-</div>
+    <div style="display: flex;flex-direction: column;">
+    <div style="width: 100%; display: flex;margin-left: 5%;">
+        <div class="border-black bg-primary text-dark toggle_active question-button text-plus"></div>
+            <div id="toggle"style="width: 80%; height: 200%;">
+                <div class="border-black margin_center bg-dark text-white question-title" >Q 자주 묻는 질문</div>
+                <div id="toggle"class="border-black margin_center text-dark question-content">A 답변</div>
+            </div>
+        </div>
 
+        <div style="width: 100%; display: flex;margin-left: 5%;">
+            <div class="border-black bg-primary text-dark toggle_active question-button text-plus"></div>
+                <div id="toggle"style="width: 80%; height: 200%;">
+                    <div class="border-black margin_center bg-dark text-white question-title">Q 자주 묻는 질문</div>
+                    <div id="toggle"class="border-black margin_center text-dark question-content">A 답변</div>
+                </div>
+            </div>
+
+            <div style="width: 100%; display: flex;margin-left: 5%;">
+                <div class="border-black bg-primary text-dark toggle_active question-button text-plus"></div>
+                    <div id="toggle"style="width: 80%; height: 200%;">
+                        <div class="border-black margin_center bg-dark text-white question-title">Q 자주 묻는 질문</div>
+                        <div id="toggle"class="border-black margin_center text-dark question-content">A 답변</div>
+                    </div>
+                </div>
+    
+
+
+</div>
 </div>
 </main>
         <div class="container-fluid bg-dark my-5 py-5 text-light footer wow fadeIn" data-wow-delay="0.1s">

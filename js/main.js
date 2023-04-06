@@ -53,7 +53,7 @@
         }
     });
     $('.back-to-top').click(function () {
-        $('html, body').animate({scrollTop: 0},0, 'easeInOutExpo');
+        $('html, body').animate({scrollTop: 0}, 0, 'easeInOutExpo');
         return false;
     });
 
@@ -105,5 +105,18 @@
         }
     });
     
-})(jQuery);
+    $(document).ready( function() {
+        $( '.toggle_active' ).click( function() {
+            $(this).toggleClass('text-plus')
+            $(this).toggleClass('text-negative')
+          var a = $(this).parents("div")
+          a.children('#toggle').children('#toggle').toggleClass('active')
+          if(a.children('#toggle').children('#toggle').hasClass("active") === false) {
+            a.children('#toggle').children('#toggle').addClass('unactive')
+            } else {
+                a.children('#toggle').children('#toggle').removeClass('unactive')
+            }
+        });
+      });
 
+})(jQuery);
