@@ -1,0 +1,229 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>전라북도 순환 관광</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">  
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            height: 70vh;
+            flex:1;
+        }
+        .btn-reservation-check{
+            background-color: #fea116;
+            color: rgb(255, 255, 255);
+            border: none;
+            border-radius: 4px;
+            width: 300px;
+            height: 30px;
+            font-weight: bold;
+        }
+        .check_title{
+            font-weight: bold;
+        }
+        input{
+            margin-bottom: 10px;
+            height: 30px;
+            width: 300px;
+            border-radius: 4px;
+            border:none
+        }
+       
+    </style>
+
+</head>
+
+<body>
+    <div class="container-fluid bg-dark px-0">
+          <!-- Spinner Start -->
+          <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+        <div class="row gx-0">
+            <div class="col-lg-3 bg-dark d-none d-lg-block">
+                <a href="index.html" class="navbar-brand w-100 h-100 m-0 p-0 d-flex align-items-center justify-content-center">
+                    <h1 class="m-0 text-primary text-uppercase">전라북도 순환 관광</h1>
+                </a>
+            </div>
+            <div class="col-lg-9">
+                <div class="row gx-0 bg-white d-none d-lg-flex">
+                    <div class="col-lg-7 px-5 text-start ">
+                        <div class="h-100 d-inline-flex  align-items-center py-2 me-4">
+                          <a href="https://www.jbtour.or.kr/video"  class="mb-0 text-dark">로그인</a>
+                        </div>
+                        <div class="h-100 d-inline-flex align-items-center py-2 me-4">
+                            <a href="https://www.jbtour.or.kr/video" class="mb-0 text-dark">회원가입</a>
+                          </div>
+                        <div class="h-100 d-inline-flex align-items-center py-2 me-4">
+                            <a href="reservation-check-result.html" class="mb-0 text-dark">예약확인</a> <!-- Non-member reservation check  / 2023.04.07 linked -->
+                          </div>
+                          <div class="h-100 d-inline-flex align-items-center py-2 me-4">
+                            <a href="index en.html" class="mb-0 text-dark">언어</a>
+                          </div> 
+                    </div>
+                    
+                </div>
+           
+              <!-- Navbar Start -->
+              <nav class="navbar navbar-expand-lg bg-dark navbar-dark p-3 p-lg-0">
+                <a href="index.html" class="navbar-brand d-block d-lg-none">
+                    <h1 class="m-0 text-primary text-uppercase">전라북도 순환관광</h1>
+                </a>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                       
+                        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                            <div class="navbar-nav mr-auto py-0">
+
+                                <div class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">도내 운행 코스</a>
+                                    <div class="dropdown-menu rounded-0 m-0">
+                                        <a href="https://www.jbtour.or.kr/drive/all" class="dropdown-item">전체</a>
+                                        <a href="https://www.jbtour.or.kr/drive/gochang" class="dropdown-item">고창/부안</a>
+                                        <a href="https://www.jbtour.or.kr/drive/muju" class="dropdown-item">무주/진안</a>
+                                        <a href="https://www.jbtour.or.kr/drive/imsil" class="dropdown-item">임실/진안</a>
+                                        <a href="https://www.jbtour.or.kr/drive/jangsu" class="dropdown-item">장수/남원</a>
+                                        <a href="https://www.jbtour.or.kr/drive/iksan" class="dropdown-item">익산/완주</a>
+                                        <a href="https://www.jbtour.or.kr/drive/jangsu" class="dropdown-item">정읍/김제</a>
+                                        <a href="https://www.jbtour.or.kr/drive/tour" class="dropdown-item">전북투어패스</a>
+                                        <a href="https://www.jbtour.or.kr/drive/saeman" class="dropdown-item">새만금코스</a>
+                                    </div>
+                                </div>
+                                    
+                                <div class="nav-item dropdown">
+                                    <a href="#" class="nav-link  dropdown-toggle" data-bs-toggle="dropdown">도내 특별 코스</a>
+                                    <div class="dropdown-menu rounded-0 m-0">
+                                        <a href="https://www.jbtour.or.kr/special/all" class="dropdown-item">전체</a>
+                                        <a href="https://www.jbtour.or.kr/special/atae" class="dropdown-item">아태마스터스</a>
+                                        <a href="https://www.jbtour.or.kr/special/mz" class="dropdown-item">MZ 코스</a>
+                                        <a href="https://www.jbtour.or.kr/special/winter" class="dropdown-item">겨울 코스</a>
+                                        <a href="https://www.jbtour.or.kr/special/silver" class="dropdown-item">실버 코스</a>
+                                        <a href="https://www.jbtour.or.kr/special/festival" class="dropdown-item">축제&생태</a>
+                                    </div>
+                                </div>
+
+                                <div class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">경상권 출발</a>
+                                        <div class="dropdown-menu rounded-0 m-0">
+                                                <a href="gyeongsang_day.html" class="dropdown-item">1박2일코스</a>
+                                                <a href="gyeongsang_day_course.html" class="dropdown-item">당일코스</a>
+                                                <a href="gyeongsang_page.html" class="dropdown-item">새만금 코스</a>
+                                        </div>
+                                </div> 
+
+                                <div class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">수도권 출발</a>
+                                        <div class="dropdown-menu rounded-0 m-0">
+                                                    <a href="area_day.html" class="dropdown-item">1박2일코스</a>
+                                                    <a href="area_lodgment.html" class="dropdown-item">당일코스</a>
+                                                    <a href="" class="dropdown-item">새만금 코스</a>
+                                                    <a href="https://www.jbtour.or.kr/area/course" class="dropdown-item">전북 투어 패스</a>
+                                        </div>
+                                </div>
+
+                                <div class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">코레일 연계</a>
+                                         <div class="dropdown-menu rounded-0 m-0">
+                                            <a href="https://www.jbtour.or.kr/korail/day" class="dropdown-item">1박2일코스</a>
+                                            <a href="https://www.jbtour.or.kr/korail/lodgment" class="dropdown-item">당일코스</a>
+                                            <a href="https://www.jbtour.or.kr/korail/tour" class="dropdown-item">새만금 코스</a>
+                                            <a href="https://www.jbtour.or.kr/korail/course" class="dropdown-item">전북 투어 패스</a>
+                                        </div>
+                                </div>
+
+                                <div class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">커뮤니티</a>
+                                        <div class="dropdown-menu rounded-0 m-0">
+                                                <a href="https://www.jbtour.or.kr/notice" class="dropdown-item">공지사항</a>
+                                                <a href="https://www.jbtour.or.kr/faq" class="dropdown-item">자주 묻는 질문</a>
+                                                <a href="https://www.jbtour.or.kr/review" class="dropdown-item">여행후기</a>
+                                            </div>
+                                </div>
+
+                                <a href="https://www.jbtour.or.kr/video" class="nav-item nav-link">홍보영상</a>
+                                   
+                                                      
+                                </div>
+
+                            </div>
+                        
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!-- Navbar End -->
+
+    <!--예약조회 페이지-->
+
+    <main>
+        <article class="ReservationCheckStyles" style="width:auto">
+            <section class="reservation-check-wrapper" style="margin-bottom:130px">
+                <div class="reservationCheck-TitleContainer" style="margin-bottom:20px">
+                    <span class="check_title" style="font-size: 25px; color: black">예약조회(비회원)</span>
+                </div>
+                <div class="reservednName-input-container">
+                    <input type="text" name="reservationUserName" placeholder="예약자명">
+                </div>
+                <div class="reservedNumber-input-container">
+                    <input type="text" name="reservationNumber" placeholder="예약번호">
+                </div>
+                <div class="reservedNumber-input-container">
+                    <input type="tel" name="reservationUserPhone" placeholder="전화번호">
+                </div>
+                <button type="button" class="btn-reservation-check" onclick="location.href='reservation-check-result.html'">예약 조회</button>
+            </section>
+        </article>
+    </main>
+ <!-- JavaScript Libraries -->
+ <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+ <script src="lib/wow/wow.min.js"></script>
+ <script src="lib/easing/easing.min.js"></script>
+ <script src="lib/waypoints/waypoints.min.js"></script>
+ <script src="lib/counterup/counterup.min.js"></script>
+ <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+ <script src="lib/tempusdominus/js/moment.min.js"></script>
+ <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+ <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+ <!-- Template Javascript -->
+ <script src="js/main.js"></script>
+
+</body>

@@ -1,0 +1,404 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>전라북도 순환 관광</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">  
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            height: 70vh;
+            flex:1;
+        }
+        .btn-reservation-pay{
+            background-color: rgb(0, 0, 0);
+            color: rgb(255, 255, 255);
+            border: none;
+            border-radius: 4px;
+            width: 300px;
+            height: 30px;
+            margin: auto;
+            display: block;
+            font-weight: bold;
+        }
+     
+        input{
+            margin: 3px;
+            height: 30px;
+            width: 120px;
+            border-radius: 4px;
+            border:none
+        }
+        h6{
+            background-color: rgb(0, 0, 0);
+            width: 128px;
+            height: 40px;
+            padding: 10px;
+            margin-bottom: 0%;
+            color:rgb(255, 255, 255);
+            clip-path: polygon(0 0, 89% 0, 100% 100%, 0% 100%);
+        }
+        table * {
+            border: 1px solid black;
+            width: 500;
+            padding: 5px;
+            font-size: 15px;
+          }
+          
+          tr{
+            width: 100%;
+          }
+          td{
+            color: black;
+          }
+          .tableGroup{
+            margin-bottom: 20px;
+          }
+          .title-cell{
+            width: 15%;
+            background-color:rgb(255, 255, 255) 
+          }
+          .nonInputText p{
+            border: hidden;
+          }
+          ul{
+            list-style: none;
+            padding-left:0px;
+            }
+            
+            input[type='radio'], label{   
+                vertical-align: middle;
+             }
+            
+    </style>
+
+</head>
+
+<body>
+    <div class="container-fluid bg-dark px-0">
+          <!-- Spinner Start -->
+          <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+        <div class="row gx-0">
+            <div class="col-lg-3 bg-dark d-none d-lg-block">
+                <a href="index.html" class="navbar-brand w-100 h-100 m-0 p-0 d-flex align-items-center justify-content-center">
+                    <h1 class="m-0 text-primary text-uppercase">전라북도 순환 관광</h1>
+                </a>
+            </div>
+            <div class="col-lg-9">
+                <div class="row gx-0 bg-white d-none d-lg-flex">
+                    <div class="col-lg-7 px-5 text-start ">
+                        <div class="h-100 d-inline-flex  align-items-center py-2 me-4">
+                          <a href="https://www.jbtour.or.kr/video"  class="mb-0 text-dark">로그인</a>
+                        </div>
+                        <div class="h-100 d-inline-flex align-items-center py-2 me-4">
+                            <a href="https://www.jbtour.or.kr/video" class="mb-0 text-dark">회원가입</a>
+                          </div>
+                        <div class="h-100 d-inline-flex align-items-center py-2 me-4">
+                            <a href="reservation-check-result.html" class="mb-0 text-dark">예약확인</a> <!-- Non-member reservation check  / 2023.04.07 linked -->
+                          </div>
+                          <div class="h-100 d-inline-flex align-items-center py-2 me-4">
+                            <a href="index en.html" class="mb-0 text-dark">언어</a>
+                          </div> 
+                    </div>
+                    
+                </div>
+           
+              <!-- Navbar Start -->
+              <nav class="navbar navbar-expand-lg bg-dark navbar-dark p-3 p-lg-0">
+                <a href="index.html" class="navbar-brand d-block d-lg-none">
+                    <h1 class="m-0 text-primary text-uppercase">전라북도 순환관광</h1>
+                </a>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                       
+                        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                            <div class="navbar-nav mr-auto py-0">
+
+                                <div class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">도내 운행 코스</a>
+                                    <div class="dropdown-menu rounded-0 m-0">
+                                        <a href="https://www.jbtour.or.kr/drive/all" class="dropdown-item">전체</a>
+                                        <a href="https://www.jbtour.or.kr/drive/gochang" class="dropdown-item">고창/부안</a>
+                                        <a href="https://www.jbtour.or.kr/drive/muju" class="dropdown-item">무주/진안</a>
+                                        <a href="https://www.jbtour.or.kr/drive/imsil" class="dropdown-item">임실/진안</a>
+                                        <a href="https://www.jbtour.or.kr/drive/jangsu" class="dropdown-item">장수/남원</a>
+                                        <a href="https://www.jbtour.or.kr/drive/iksan" class="dropdown-item">익산/완주</a>
+                                        <a href="https://www.jbtour.or.kr/drive/jangsu" class="dropdown-item">정읍/김제</a>
+                                        <a href="https://www.jbtour.or.kr/drive/tour" class="dropdown-item">전북투어패스</a>
+                                        <a href="https://www.jbtour.or.kr/drive/saeman" class="dropdown-item">새만금코스</a>
+                                    </div>
+                                </div>
+                                    
+                                <div class="nav-item dropdown">
+                                    <a href="#" class="nav-link  dropdown-toggle" data-bs-toggle="dropdown">도내 특별 코스</a>
+                                    <div class="dropdown-menu rounded-0 m-0">
+                                        <a href="https://www.jbtour.or.kr/special/all" class="dropdown-item">전체</a>
+                                        <a href="https://www.jbtour.or.kr/special/atae" class="dropdown-item">아태마스터스</a>
+                                        <a href="https://www.jbtour.or.kr/special/mz" class="dropdown-item">MZ 코스</a>
+                                        <a href="https://www.jbtour.or.kr/special/winter" class="dropdown-item">겨울 코스</a>
+                                        <a href="https://www.jbtour.or.kr/special/silver" class="dropdown-item">실버 코스</a>
+                                        <a href="https://www.jbtour.or.kr/special/festival" class="dropdown-item">축제&생태</a>
+                                    </div>
+                                </div>
+
+                                <div class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">경상권 출발</a>
+                                        <div class="dropdown-menu rounded-0 m-0">
+                                                <a href="gyeongsang_day.html" class="dropdown-item">1박2일코스</a>
+                                                <a href="gyeongsang_day_course.html" class="dropdown-item">당일코스</a>
+                                                <a href="gyeongsang_page.html" class="dropdown-item">새만금 코스</a>
+                                        </div>
+                                </div> 
+
+                                <div class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">수도권 출발</a>
+                                        <div class="dropdown-menu rounded-0 m-0">
+                                                    <a href="area_day.html" class="dropdown-item">1박2일코스</a>
+                                                    <a href="area_lodgment.html" class="dropdown-item">당일코스</a>
+                                                    <a href="" class="dropdown-item">새만금 코스</a>
+                                                    <a href="https://www.jbtour.or.kr/area/course" class="dropdown-item">전북 투어 패스</a>
+                                        </div>
+                                </div>
+
+                                <div class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">코레일 연계</a>
+                                         <div class="dropdown-menu rounded-0 m-0">
+                                            <a href="https://www.jbtour.or.kr/korail/day" class="dropdown-item">1박2일코스</a>
+                                            <a href="https://www.jbtour.or.kr/korail/lodgment" class="dropdown-item">당일코스</a>
+                                            <a href="https://www.jbtour.or.kr/korail/tour" class="dropdown-item">새만금 코스</a>
+                                            <a href="https://www.jbtour.or.kr/korail/course" class="dropdown-item">전북 투어 패스</a>
+                                        </div>
+                                </div>
+
+                                <div class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">커뮤니티</a>
+                                        <div class="dropdown-menu rounded-0 m-0">
+                                                <a href="https://www.jbtour.or.kr/notice" class="dropdown-item">공지사항</a>
+                                                <a href="https://www.jbtour.or.kr/faq" class="dropdown-item">자주 묻는 질문</a>
+                                                <a href="https://www.jbtour.or.kr/review" class="dropdown-item">여행후기</a>
+                                            </div>
+                                </div>
+
+                                <a href="https://www.jbtour.or.kr/video" class="nav-item nav-link">홍보영상</a>
+                                   
+                                                      
+                                </div>
+
+                            </div>
+                        
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!-- Navbar End -->
+
+    <!--회원 예약페이지-->
+
+    <main>
+        <div class="ReservationStyles" style="width:60%; height:100%; padding:20px">
+            <form action="reservation-complete.html"> <!--필수입력 항목을 다 입력하면 결제완료 페이지로 전환-->
+                <div class="ReservationImformations">
+                    <h4 style="margin-top:20px; margin-bottom:20px">예약하기(회원)</h4>
+                    <p style="font-size:15px; display:inline; color:black">*</p>
+                    <p style="font-size:15px; display:inline; color:red">필수기입</p>
+                    <section class="tableGroup">
+                        <h6>관광코스 정보</h6>
+                        <table>
+                            <colgroup class="table-first-row">
+                                <col class="title-cell">
+                                <col>
+                            </colgroup>
+                            <tr>
+                                <td>선택 코스</td>
+                                <td style="width: 720px;">전북투어패스 [전주/진안]</td>
+                            </tr>
+                            <tr>
+                                <td>여행일정</td>
+                                <td>2023/05/07 ~ 2023/05/07</td>
+                            </tr>
+                        </table>
+                    </section>
+                <section class=tableGroup>
+                    <h6>예약자 정보</h6>
+                    <table>
+                        <colgroup class="table-first-row">
+                            <col  class="title-cell">
+                            <col>
+                            </colgroup>
+                        <tr>
+                            <td>예약자 명 *</td>
+                            <td>
+                                <input type="text" id="res-userName" size="10" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>연락처 *</td>
+                            <td style="width: 720px; border:none" >
+                                <select id="mPhone1" style="border-radius: 4px;">
+                                    <option value="010" selected>010</option>
+                                    <option value="011">011</option>
+                                    <option value="016">017</option>
+                                    <option value="018">018</option>
+                                    <option value="019">019</option>
+                                </select>  -
+                                <input type="number" id="mPhone2" required>  -
+                                <input type="number" id="mPhone3" required>  
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>연락처2</td>
+                            <td style="width: 720px;">
+                                <select id="mSubPhone1"  style="border-radius: 4px;">
+                                    <option value="010" selected>010</option>
+                                    <option value="011">011</option>
+                                    <option value="016">017</option>
+                                    <option value="018">018</option>
+                                    <option value="019">019</option>
+                                </select>  -
+                                <input type="number" id="mSubPhone2">  -
+                                <input type="number" id="mSubPhone3">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>이메일 *</td>
+                            <td style="width: 720px;">
+                                <input type="text"  name="email01" size="20" maxlength="20" value="" autocomplete="off" required>
+                                @
+                                <input id="email02" name="email02" list="domains" style=font-size:10px; placeholder="도메인 선택">
+                                <datalist id="domains">
+                                    <option value="naver.com">
+                                    <option value="daum.net">
+                                    <option value="gmail.com">
+                                    <option value="직접입력">
+                                </datalist>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>요청사항</td>
+                            <td style="width: 720px;">
+                                <textarea cols="90" rows="10" style="font-size:15px; border-radius:4px"; placeholder="요청 불가 항목 ex) 좌석요청 등"></textarea>
+                            </td>
+                        </tr>
+                    </table>
+                </section>
+                <section class=tableGroup>
+                    <h6>결제 정보</h6>
+                    
+                    <div class="nonInputText">
+                        <table>
+                            <colgroup class="table-first-row">
+                                <col  class="title-cell" >
+                                <col style="border:none">
+                                </colgroup>
+                            <tr>
+                                <td>총 합계</td>
+                                <td style="width: 720px">
+                                <div style="border:hidden">
+                                    <p style="font-weight: bold; font-size:20px">20,000 원</p>
+                                    <p style="display:inline; margin-right:50px">성인(만 19세 이상): </p>
+                                    <p style="font-weight: bold; display:inline">[ 10,000 원 ]</p>
+                                    <p style="font-weight: bold; display:inline">2 명<br></p>
+                                    <p style="display:inline">소인(만 7세~만 19세 미만): </p>
+                                    <p style="font-weight: bold; display:inline">[ 5,000 원 ]</p>
+                                    <p style="font-weight: bold; display:inline">0 명<br></p>
+                                    <p style="display:inline; margin-right:50px">경로(만 65세 이상): </p>
+                                    <p style="font-weight: bold; display:inline;">[ 7,000 원 ]</p>
+                                    <p style="font-weight: bold; display:inline">0 명</p>
+                                </div>   
+                                </td>
+                            </tr>
+
+                        </table>
+                    </div>
+                </section>
+                <section class=tableGroup>
+                    <h6>승차장소 선택</h6>
+                    <table>
+                        <colgroup class="table-first-row">
+                            <col  class="title-cell">
+                            <col>
+                            </colgroup>
+                        <tr>
+                            <td>승차장소 *</td>
+                            <td style="width:720px">
+                                <input id="transportation" list="transportation-list" style="font-size:10px" placeholder="승차장소" required>
+                                <datalist id="transportation-list">
+                                    <option value="원광대 정문 (17:00)">
+                                    <option value="원광대 후문 (17:20)">
+                                    <option value="원광대 서문 (17:30)">
+                                    <option value="원광대 동문 (17:40)">
+                                </datalist>
+
+                            </td>
+                        </tr>
+                    </table>
+                </section>
+                <ul style="width:100%; height:80px;">
+                        <li style="vertical-align:middle">
+                            <input type="radio" name="agree" id="agreecheck" style="width:20px;height:20px;border:1px;" required >(필수) 이용약관 동의
+                        </li>
+                        <li>
+                            <input type="radio" name="agree" id="disagreecheck" style="width:20px;height:20px;border:1px;">(필수) 개인정보 수집 및 이용 동의
+                        </li>
+                </ul>
+                <input type="submit" class="btn-reservation-pay"  value="결제하기" style="margin-bottom: 20px;" >
+            </form>
+            </div>
+        
+        </div>
+        
+    </main>
+ <!-- JavaScript Libraries -->
+ <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+ <script src="lib/wow/wow.min.js"></script>
+ <script src="lib/easing/easing.min.js"></script>
+ <script src="lib/waypoints/waypoints.min.js"></script>
+ <script src="lib/counterup/counterup.min.js"></script>
+ <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+ <script src="lib/tempusdominus/js/moment.min.js"></script>
+ <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+ <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+ <!-- Template Javascript -->
+ <script src="js/main.js"></script>
+
+</body>
