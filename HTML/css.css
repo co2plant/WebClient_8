@@ -1,0 +1,702 @@
+.back{
+    background-color:azure ;
+    
+    
+    }
+.a{
+  
+
+    width: 65;
+    height: 20;
+    border: 3px solid #0F172B;
+    background-color: black;
+    font-size: 20;
+    color:white
+
+    
+    
+}
+
+.aa{
+    width: 65;
+    height: 20;
+    border: 3px solid #0F172B;
+    font-size: 20;
+    position: relative;
+    left: 580;
+    top: -48;
+}
+
+.b{
+    font-size: 25;
+    
+    position: relative;
+    left: 200;
+    top: -400;
+}
+
+.bb{
+    font-size: 25;
+    
+    position: relative;
+    left: -30;
+    top:  -340;
+}
+
+.bbb{
+    font-size: 25;
+    
+    position: relative;
+    left: -260;
+    top: -280;
+}
+
+.c{
+    display: block;
+    width: 170px;
+    border: 2px solid gray;
+    padding: 0.5rem;
+    line-height: 1rem;
+    border-radius: 1rem;
+    
+    position: relative;
+    left: 940;
+    top: -455;
+}
+
+.cc{
+    position: relative;
+    left: 970;
+    top: -420;
+}
+
+.ccc{
+    width: 65;
+    height: 20;
+    border: 3px solid #0F172B;
+    font-size: 20;
+    position: relative;
+    left: 620;
+    top: -370;
+}
+
+.cccc{
+    color: crimson;
+    position: relative;
+    left: 39;
+    top: -285;
+}
+
+.ccccc{
+    color: gray;
+    position: relative;
+    left: 40;
+    top: -295;
+}
+
+.d{
+    position: relative;
+    left: 30;
+    top: -175;
+}
+
+.dd{
+    position: relative;
+    left: -70;
+    top: -180;
+}
+
+.ddd{
+    position: relative;
+    left: 40;
+    top: -180;
+}
+
+.dddd{
+    position: relative;
+    left: 40;
+    top: -180;
+}
+
+.ddddd{
+    position: relative;
+    left: 40;
+    top: -180;
+}
+
+.dddddd{
+    position: relative;
+    left: 500;
+    top: -276;
+}
+
+.ddddddd{
+    position: relative;
+    left: 500;
+    top: -270;
+}
+
+.e{
+    position: relative;
+    left: 20;
+    top: -200;
+}
+
+.ee{
+    position: relative;
+    left: 0;
+    top: -210;
+}
+
+.eee{
+    position: relative;
+    left: 40;
+    top: -200;
+}
+
+.eeee{
+    position: relative;
+    left: 40;
+    top: -195;
+}
+
+.eeeee{
+    position: relative;
+    left: 40;
+    top: -205;
+}
+
+.eeeeee{
+    position: relative;
+    left: 40;
+    top: -190;
+}
+
+.eeeeeee{
+    position: relative;
+    left: 40;
+    top: -195;
+}
+
+.eeeeeeee{
+    position: relative;
+    left: -660;
+    top: -100;
+}
+
+.eeeeeeee1{
+    position: relative;
+    left: -870;
+    top: -100;
+}
+
+.f{
+
+    
+    position: relative;
+    left: 40;
+    top: -160;
+
+    width: 10px;
+    background-color: aquamarine;
+    border: 2px solid gray;
+    padding: 0.5rem;
+    line-height: 2rem;
+}
+
+.f1{
+
+    
+    position: relative;
+    left: 40;
+    top: -140;
+
+   
+}
+
+.ff{
+    position: relative;
+    left: 40;
+    top: -40;
+
+    width: 10px;
+    background-color: aquamarine;
+    border: 2px solid gray;
+    padding: 0.5rem;
+    line-height: 2rem;
+}
+
+.fff{
+    display :contents;
+    width: 10px;
+    background-color: antiquewhite;
+    border: 2px solid gray;
+    padding: 0.5rem;
+    line-height: 1rem;
+    
+
+    position: relative;
+    left: 10;
+    top: 0;
+}
+
+.img1{
+    object-fit: fill;
+}
+
+.g1{
+    position: relative;
+    left: 50;
+    top: -450;
+}
+
+.g11{
+    position: relative;
+    left: 265;
+    top: 15;
+}
+
+.g111{
+    position: relative;
+    left: 315;
+    top: -260;
+}
+
+.g1111{
+    position: relative;
+    left: 315;
+    top: -250;
+}
+
+.g11111{
+    position: relative;
+    left: 0;
+    top: -100;
+}
+
+.g111111{
+    position: relative;
+    left: 315;
+    top: -190;
+}
+
+.g2{
+    position: relative;
+    left: 300;
+    top: -450;
+}
+
+.g22{
+    position: relative;
+    left: 300;
+    top: -450;
+}
+
+.g222{
+    position: relative;
+    left: 315;
+    top: -260;
+}
+
+.g2222{
+    position: relative;
+    left: 315;
+    top: -250;
+}
+
+.g22222{
+    position: relative;
+    left: -140;
+    top: -100;
+}
+
+.g222222{
+    position: relative;
+    left: 315;
+    top: -190;
+}
+
+.g3{
+    position: relative;
+    left: 50;
+    top: -700;
+}
+
+.g33{
+    position: relative;
+    left: 315;
+    top: -700;
+}
+
+.g333{
+    position: relative;
+    left: 315;
+    top: -520;
+}
+
+.g3333{
+    position: relative;
+    left: 315;
+    top: -520;
+}
+
+.g33333{
+    position: relative;
+    left: 315;
+    top: -300;
+}
+
+.g333333{
+    position: relative;
+    left: 315;
+    top: -400;
+}
+
+.g3333333{
+    position: relative;
+    left: -200;
+    top: -100;
+}
+
+.g4{
+    position: relative;
+    left: 50;
+    top: -700;
+}
+
+.g44{
+    position: relative;
+    left: 315;
+    top: -700;
+}
+
+.g444{
+    position: relative;
+    left: 315;
+    top: -520;
+}
+
+.g4444{
+    position: relative;
+    left: 315;
+    top: -520;
+}
+
+.g44444{
+    position: relative;
+    left: 315;
+    top: -300;
+}
+
+.g444444{
+    position: relative;
+    left: -200;
+    top: -150;
+}
+
+.g4444444{
+    position: relative;
+    left: -200;
+    top: -200;
+}
+
+.g5{
+    position: relative;
+    left: 50;
+    top: -700;
+}
+
+.g55{
+    position: relative;
+    left: 315;
+    top: -700;
+}
+
+.g555{
+    position: relative;
+    left: 315;
+    top: -520;
+}
+
+.g5555{
+    position: relative;
+    left: 315;
+    top: -520;
+}
+
+.g55555{
+    position: relative;
+    left: 315;
+    top: -330;
+}
+
+.g555555{
+    position: relative;
+    left: 315;
+    top: -300;
+}
+
+.g5555555{
+    position: relative;
+    left: -200;
+    top: -180;
+}
+
+.g6{
+    position: relative;
+    left: 315;
+    top: -500;
+}
+
+.g66{
+    position: relative;
+    left: 315;
+    top: -480;
+}
+
+.g666{
+    position: relative;
+    left: 315;
+    top: -300;
+}
+
+.g6666{
+    position: relative;
+    left: 315;
+    top: -280;
+}
+
+.g66666{
+    position: relative;
+    left: -200;
+    top: -130;
+}
+
+.g7{
+    position: relative;
+    left: 50;
+    top: -700;
+}
+
+.g77{
+    position: relative;
+    left: 315;
+    top: -700;
+}
+
+.g777{
+    position: relative;
+    left: 315;
+    top: -520;
+}
+
+.g7777{
+    position: relative;
+    left: 315;
+    top: -520;
+}
+
+.g77777{
+    position: relative;
+    left: 315;
+    top: -330;
+}
+
+.g777777{
+    position: relative;
+    left: 315;
+    top: -300;
+}
+
+.g7777777{
+    position: relative;
+    left: -200;
+    top: -180;
+}
+
+.g8{
+    position: relative;
+    left: 50;
+    top: -700;
+}
+
+.g88{
+    position: relative;
+    left: 315;
+    top: -700;
+}
+
+.g888{
+    position: relative;
+    left: 315;
+    top: -520;
+}
+
+.g8888{
+    position: relative;
+    left: 315;
+    top: -520;
+}
+
+.g88888{
+    position: relative;
+    left: 315;
+    top: -330;
+}
+
+.g888888{
+    position: relative;
+    left: 315;
+    top: -300;
+}
+
+.g8888888{
+    position: relative;
+    left: -200;
+    top: -180;
+}
+
+.g9{
+    position: relative;
+    left: 50;
+    top: -700;
+}
+
+.g99{
+    position: relative;
+    left: 315;
+    top: -700;
+}
+
+.g999{
+    position: relative;
+    left: 315;
+    top: -520;
+}
+
+.g9999{
+    position: relative;
+    left: 315;
+    top: -520;
+}
+
+.g99999{
+    position: relative;
+    left: 315;
+    top: -330;
+}
+
+.g999999{
+    position: relative;
+    left: 315;
+    top: -300;
+}
+
+.g9999999{
+    position: relative;
+    left: -200;
+    top: -180;
+}
+
+.g10{
+    position: relative;
+    left: 315;
+    top: -500;
+}
+
+.g101{
+    position: relative;
+    left: 315;
+    top: -500;
+}
+
+.g1010{
+    position: relative;
+    left: 315;
+    top: -320;
+}
+
+.g101010{
+    position: relative;
+    left: 315;
+    top: -320;
+}
+
+.g10101010{
+    position: relative;
+    left: -200;
+    top: -130;
+}
+
+
+.g011{
+    position: relative;
+    left: 50;
+    top: -180;
+}
+
+.g0111{
+    position: relative;
+    left: 315;
+    top: -150;
+}
+
+.g01111{
+    position: relative;
+    left: -200;
+    top: -20;
+}
+
+.g012{
+    position: relative;
+    left: 50;
+    top: -180;
+}
+
+.g01212{
+    position: relative;
+    left: 315;
+    top: -150;
+}
+
+.g0121212{
+    position: relative;
+    left: -330;
+    top: -20;
+}
+
+.g13{
+    position: relative;
+    left: 50;
+    top: -480;
+}
+
+.g1313{
+    position: relative;
+    left: 315;
+    top: -450;
+}
+
+.g131313{
+    position: relative;
+    left: 315;
+    top: -280;
+}
+
+.g13131313{
+    position: relative;
+    left: 315;
+    top: -280;
+}
+
+.g1313131313{
+    position: relative;
+    left: -200;
+    top: -100;
+}
+
+
+
+.h{
+   color :forestgreen
+}
