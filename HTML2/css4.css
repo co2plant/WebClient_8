@@ -1,0 +1,31 @@
+.syn1{
+    color: #FEA116;
+    background-color: #0F172B;
+    font-size: 50;
+}
+
+.syn2{
+        font-size: 17;
+        font-style: normal;
+        display: block;
+        width: 400px;
+        border: 3px solid #0F172B;
+        background-color: antiquewhite;
+        padding: 0.5rem;
+        line-height: 1rem;
+        border-radius: 1rem;
+        
+        
+    }
+
+    .syn3{
+        color: #FEA116;
+        background-color: #0F172B;
+        font-size: 20;
+    }    
+
+    .syn4{
+        color: #FEA116;
+        background-color: #0F172B;
+        font-size: 34.7;
+    }
