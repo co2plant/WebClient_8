@@ -331,6 +331,10 @@ li:nth-child(2) {
     border-color: white;
     box-shadow: 5px 5px 10px rgba(0,0,0,0.19), 6px 6px 6px rgba(0,0,0,0.23);
 }
+.course-container:hover .course-img
+{
+    scale: 1.1;
+}
 .course-img-container
 {
     width: 30%;
@@ -354,7 +358,7 @@ li:nth-child(2) {
 }
 .course-img:hover
 {
-    scale: 1.1;
+    
 }
 .course-text-container
 {
